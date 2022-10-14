@@ -1,21 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
 :root {
     --borderTest: 5px solid blue;
 }
 
-
 html {
     height: 100%;
+    width: 100%;
 }
 
 body {
-    margin: 0;    
+    margin: 0;
+    font-family: 'Roboto';    
     color: black;
-    display: flex;
-    height: 100%;
+    display: flex;   
     flex-direction: column;   
     gap: 5em;
+    
 }
-
     
 footer {
     border-top: 5px solid black;
@@ -24,9 +26,12 @@ footer {
     display: flex;
     align-items: center;  
 }
+
+
 a {
     text-decoration: none;
     color: white;
+    font-weight: 100;
 }
 
 a:hover {
@@ -44,7 +49,10 @@ img {
     width: 100%;
     height: 100%;
 }
-
+h1 {
+    font-size: 2.3em;
+    margin: 0;
+}
 
 .container {
     margin: 0 auto;
@@ -54,6 +62,8 @@ img {
 #bienvenue {    
     background-color: black;
     color: white;
+    flex-basis: 100vh; 
+    flex-grow: 0;   
 }
 
 #flexHeader{
@@ -61,36 +71,32 @@ img {
     justify-content: space-between;    
 }
 
-#flexPresentation div:nth-of-type(1) {  
-    flex : 0 0 60%;  
-}
-
-#flexPresentation div:nth-of-type(2) {     
-    flex : 0 1 40%;   
-}
-
 #flexPresentation {
     display: flex;
     gap: 1em;
     flex-wrap: nowrap;
     align-items: center;
-    gap: 3em;
+    gap: 3em;     
+    padding-top: 15%;    
 }
 
+
+#flexPresentation div:nth-of-type(1) {  
+    flex : 1 0 60%;  
+}
+
+#flexPresentation div:nth-of-type(2) {     
+    flex : 0 1 40%;   
+}
 #projets {
     color: black;
     text-align: center;
 }
 
-#projets h1 {
-    font-size: 3em;
-}
-
-
-
 #flexProjets {
     display: flex;
     flex-direction: column;
+    gap:1em;
 }
 
 
@@ -103,20 +109,16 @@ img {
 }
 
 #projetGrille h3{
-    text-align: start;
-    margin-left: 20px;    
+    text-align: start;   
     padding: 30px 15px;
 }
 
 
 #projetGrille a {
     font-size: 1.5em;
-    text-shadow: 4px 2px 9px rgba(0,0,0,0.7);
+    text-shadow: 2px 2px 1px rgba(0,0,0,1);
     border-radius: 5px;
-    background-size: cover;
-    
-    
-
+    background-size: cover;  
 }
 
 #projetGrille a:nth-of-type(1) {
@@ -146,16 +148,67 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap:1em;
 }
 
 
 #flexContact a {
     background-color: black;
-    width: 150px;
-    padding: 25px 30px;
+    padding: 25px 30px;  
 
-    
+}
+
+/*  Projets */
+#projet1 {
+    background: url(images/points.png), center url(images/jump-start.png);
+    flex-basis: 100vh;
+    color: white;
+}
+
+#projets_présentation h1 {
+    text-align: center;
+}
+
+
+@media screen and (max-width :1130px ) {
+
+    .container {
+        width: 700px;
+    }
+    #projetGrille {
+        grid-template-columns: repeat(2,1fr);
+    }
 
 }
 
 
+@media screen and (max-width :730px ) {
+
+    .container {
+        width: 450px;
+    }
+
+    #projetGrille {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width :460px ) {
+
+    .container {
+        width: 300px;
+    }
+
+    #projetGrille {
+        grid-template-columns: 1fr;
+    }
+
+    #flexPresentation div:nth-of-type(2) {     
+        display: none; 
+    }    
+
+    ul {
+        flex-direction: column;
+    }
+
+}
