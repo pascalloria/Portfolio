@@ -1,0 +1,161 @@
+:root {
+    --borderTest: 5px solid blue;
+}
+
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;    
+    color: black;
+    display: flex;
+    height: 100%;
+    flex-direction: column;   
+    gap: 5em;
+}
+
+    
+footer {
+    border-top: 5px solid black;
+    color: black;
+    flex-basis: 5em;  
+    display: flex;
+    align-items: center;  
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1em;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.container {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+#bienvenue {    
+    background-color: black;
+    color: white;
+}
+
+#flexHeader{
+    display: flex;
+    justify-content: space-between;    
+}
+
+#flexPresentation div:nth-of-type(1) {  
+    flex : 0 0 60%;  
+}
+
+#flexPresentation div:nth-of-type(2) {     
+    flex : 0 1 40%;   
+}
+
+#flexPresentation {
+    display: flex;
+    gap: 1em;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 3em;
+}
+
+#projets {
+    color: black;
+    text-align: center;
+}
+
+#projets h1 {
+    font-size: 3em;
+}
+
+
+
+#flexProjets {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#projetGrille {
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+    grid-auto-rows: 150px;
+    grid-gap: 1em;
+    border-radius: 5px;
+}
+
+#projetGrille h3{
+    text-align: start;
+    margin-left: 20px;    
+    padding: 30px 15px;
+}
+
+
+#projetGrille a {
+    font-size: 1.5em;
+    text-shadow: 4px 2px 9px rgba(0,0,0,0.7);
+    border-radius: 5px;
+    background-size: cover;
+    
+    
+
+}
+
+#projetGrille a:nth-of-type(1) {
+    background:url(images/jump-start.png);
+    background-size: cover;
+}
+#projetGrille a:nth-of-type(2) {
+    background-image: url(images/mega-pop.jpg);
+}   
+#projetGrille a:nth-of-type(3) {
+    background-image: url(images/pac-man.jpg);
+}
+#projetGrille a:nth-of-type(4) {
+    background-image: url(images/rodeo-pump.jpg);
+}
+
+#projetGrille a:hover {
+    opacity: 0.7;
+}
+
+
+
+
+#flexContact{
+    text-align: center;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#flexContact a {
+    background-color: black;
+    width: 150px;
+    padding: 25px 30px;
+
+    
+
+}
+
+
