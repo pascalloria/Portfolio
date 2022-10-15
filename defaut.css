@@ -72,12 +72,13 @@ h1 {
 }
 
 #flexPresentation {
+    position: relative;
     display: flex;
     gap: 1em;
     flex-wrap: nowrap;
     align-items: center;
     gap: 3em;     
-    padding-top: 15%;    
+    top: calc(50% - 51px);    
 }
 
 
@@ -171,44 +172,38 @@ h1 {
 
 
 @media screen and (max-width :1130px ) {
-
     .container {
         width: 700px;
     }
     #projetGrille {
         grid-template-columns: repeat(2,1fr);
-    }
-
+    }   
 }
 
 
 @media screen and (max-width :730px ) {
-
     .container {
         width: 450px;
     }
-
     #projetGrille {
         grid-template-columns: 1fr;
-    }
-}
+    }    
 
 @media screen and (max-width :460px ) {
-
     .container {
         width: 300px;
     }
-
     #projetGrille {
         grid-template-columns: 1fr;
     }
-
     #flexPresentation div:nth-of-type(2) {     
         display: none; 
     }    
-
     ul {
         flex-direction: column;
+    }
+    #flexPresentation {  
+        top: calc(50% - 100px);    
     }
 
 }
