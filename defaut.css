@@ -156,8 +156,7 @@ h1 {
 
 #flexContact a {
     background-color: black;
-    padding: 25px 30px;  
-
+    padding: 15px 30px;  
 }
 
 /*  Projets */
@@ -189,6 +188,7 @@ h1 {
     #projetGrille {
         grid-template-columns: 1fr;
     }    
+}
 
 @media screen and (max-width :460px ) {
     .container {
