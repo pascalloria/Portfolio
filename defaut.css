@@ -165,7 +165,7 @@ h1 {
     background-size: cover;
     text-shadow: 2px 2px 3px rgb(255, 0, 0);
     flex-basis: 100vh;
-    color: white;
+    color: blue;
 }
 
 #projets_présentation h1 {
