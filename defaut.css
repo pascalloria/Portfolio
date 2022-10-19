@@ -193,9 +193,7 @@ h1 {
     flex-basis: 60%;
 }
 .link a {
-    margin-right: 25%;
-    
-    
+    margin-right: 25%;        
 }
 
 
@@ -231,11 +229,9 @@ h1 {
 
 @media screen and (max-width :460px ) {
     .container {
-        width: 300px;
+        width: 100%;
     }
-    #projetGrille {
-        grid-template-columns: 1fr;
-    }
+  
     #flexPresentation div:nth-of-type(2) {     
         display: none; 
     }    
