@@ -126,7 +126,7 @@ h1 {
     background-size: cover;
 }
 #projetGrille a:nth-of-type(2) {
-    background-image: url(images/mega-pop.jpg);
+    background-image: url(images/Screenshot_Le\ seigneur\ des\ pendus.png);
     background-size: cover;
 }   
 #projetGrille a:nth-of-type(3) {
@@ -162,6 +162,8 @@ h1 {
 }
 
 /*  Projets */
+
+/*  Projets 1 */
 #projet1 {
     background: no-repeat  url(images/Fond_Body.webp);
     background-size: cover;
@@ -183,7 +185,7 @@ h1 {
 #flexPresentation p {
     font-size: 1.5em;
 }
-
+ 
 
 
 #projets_présentation h1 {
@@ -208,6 +210,19 @@ h1 {
 .link a {
     margin-right: 25%;        
 }
+/* Projet 2 */
+#projet2 {
+    background: no-repeat  url(images/mainFond.webp);
+    background-size: cover;
+    flex-basis: 100vh;
+    color: white;        
+}
+
+
+
+
+
+
 
 
 
